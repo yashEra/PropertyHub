@@ -84,7 +84,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     
     if (user.register(DBConnector.getConnection())) {
-        response.sendRedirect("login.jsp?status=1");
+        response.sendRedirect("loginForm.jsp?status=1");
     } else {
         response.sendRedirect("registerForm.jsp?status=0");
     }
