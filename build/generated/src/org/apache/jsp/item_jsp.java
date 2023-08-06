@@ -110,13 +110,28 @@ public final class item_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print( pro_img_url );
       out.write("\" class=\"img-fluid\" alt=\"Property Image\">\n");
       out.write("        <!-- Add other property details here -->\n");
+      out.write("        <!-- Buy Now Button -->\n");
+      out.write("        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n");
+      out.write("            <input type=\"hidden\" name=\"cmd\" value=\"_xclick\">\n");
+      out.write("            <input type=\"hidden\" name=\"business\" value=\"your_paypal_business_email@example.com\">\n");
+      out.write("            <input type=\"hidden\" name=\"item_name\" value=\"");
+      out.print( propertyName );
+      out.write("\">\n");
+      out.write("            <input type=\"hidden\" name=\"amount\" value=\"");
+      out.print( price );
+      out.write("\">\n");
+      out.write("            <input type=\"hidden\" name=\"currency_code\" value=\"USD\">\n");
+      out.write("            <input type=\"hidden\" name=\"return\" value=\"http://your_website.com/success\">\n");
+      out.write("            <input type=\"hidden\" name=\"cancel_return\" value=\"http://your_website.com/cancel\">\n");
+      out.write("            <input type=\"submit\" value=\"Buy Now\" class=\"btn btn-primary\">\n");
+      out.write("        </form>\n");
       out.write("    </div>\n");
       out.write("    ");
  
             } else {
                 // Property with the given ID not found
                 // Handle the error case (e.g., redirect to an error page)
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("error.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

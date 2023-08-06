@@ -60,6 +60,17 @@
         <p>Price: <%= price %></p>
         <img src="<%= pro_img_url %>" class="img-fluid" alt="Property Image">
         <!-- Add other property details here -->
+        <!-- Buy Now Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="ya794120@gmail.com">
+            <input type="hidden" name="item_name" value="<%= propertyName %>">
+            <input type="hidden" name="amount" value="<%= price %>">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="http://your_website.com/success">
+            <input type="hidden" name="cancel_return" value="http://your_website.com/cancel">
+            <input type="submit" value="Buy Now" class="btn btn-primary">
+        </form>
     </div>
     <% 
             } else {
@@ -89,4 +100,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
