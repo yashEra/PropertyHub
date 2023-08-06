@@ -13,6 +13,9 @@
         if (status == 0) {
             message = "<h7 class='text-danger'>Your username and password are incorrect.</h7>";
         }
+        if (status == 1) {
+            message = "<h7 class='text-info'>you have.</h7>";
+        }
 
     }
 %>

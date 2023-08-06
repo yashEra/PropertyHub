@@ -11,14 +11,14 @@ import java.sql.*;
  * @author shach
  */
 public class User {
-    private String role;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String contactNumber;
-    private String username;
-    private String password;
-    private String address;
+    private String role ;
+    private String firstName ;
+    private String lastName ;
+    private String email ;
+    private String contactNumber ;
+    private String username ;
+    private String password ;
+    private String address ;
     private String shop_address;
     private String acc_number;
     private String acc_type;
