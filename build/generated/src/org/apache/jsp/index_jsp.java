@@ -117,9 +117,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <p class=\"card-text\">Price: ");
       out.print( price );
       out.write("</p>\n");
-      out.write("                        <p class=\"card-text\">");
+      out.write("                        <!--<p class=\"card-text\">");
       out.print( description );
-      out.write("</p>\n");
+      out.write("</p>-->\n");
       out.write("                        <a href=\"item.jsp?pro_id=");
       out.print( propertyId );
       out.write("\" class=\"btn btn-primary\">Buy Now</a>\n");

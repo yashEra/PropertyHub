@@ -69,7 +69,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><%= propertyName %></h5>
                         <p class="card-text">Price: <%= price %></p>
-                        <p class="card-text"><%= description %></p>
+                        <!--<p class="card-text"><%= description %></p>-->
                         <a href="item.jsp?pro_id=<%= propertyId %>" class="btn btn-primary">Buy Now</a>
                         <!-- Add other property details here -->
                     </div>
