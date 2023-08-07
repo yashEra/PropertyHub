@@ -161,38 +161,38 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        </section>\n");
       out.write("        <section>\n");
-      out.write("\t\t\t<h2 class=\"titles\">WELCOME TO Property Hub</h2>\n");
-      out.write("\t\t\t<div class=\"welcome\">\n");
-      out.write("\t\t\t\t\n");
-      out.write("\t\t\t\t\t<img src=\"images/welcome.jpg\" alt=\"welcome\">\n");
-      out.write("\t\t\t\t\t<p>\n");
-      out.write("\t\t\t\t\t\tWestern University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>\n");
-      out.write("\t\t\t\t\t\t\n");
-      out.write("\t\t\t\t\t\tWe are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.\n");
-      out.write("\t\t\t\t\t</p>\n");
-      out.write("\t\t\t\t\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t</section>\n");
-      out.write("\t\t<section class=\"faculty__home\">\n");
-      out.write("\t\t\t\t<div>\n");
-      out.write("\t\t\t\t\t<h2>CATOGORIES</h2>\n");
-      out.write("\t\t\t\t\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__home__page\">\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"images/welcome.jpg\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Management\" width=\"100%\"></a><a href=\"html/management.html\" class=\"faculty__link\"><h3>House</h3></a></div>\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/science.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Science\" width=\"100%\"></a><a href=\"html/science.html\" class=\"faculty__link\"><h3>Building</h3></a></div>\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Technology\" width=\"100%\"></a><a href=\"html/technology.html\" class=\"faculty__link\"><h3>Land</h3></a></div>\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/engineering.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Engineering\" width=\"100%\"></a><a href=\"html/engineering.html\" class=\"faculty__link\"><h3>Apartment</h3></a></div>\n");
-      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/information-technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Information Technology\" width=\"100%\"></a><a href=\"html/information-technology.html\" class=\"faculty__link\"><h3>Industrial property</h3></a></div>\n");
-      out.write("\t\t\t\t\t\t\n");
-      out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t</section>\n");
-      out.write("<!--        <div class=\"jumbotron jumbotron-fluid\">\n");
-      out.write("            <div class=\"container__header\">\n");
-      out.write("                <h1>Welcome to Property Hub</h1>\n");
-      out.write("                <p>Find your dream property here!</p>\n");
+      out.write("            <h2 class=\"titles\">WELCOME TO Property Hub</h2>\n");
+      out.write("            <div class=\"welcome\">\n");
+      out.write("\n");
+      out.write("                <img src=\"images/welcome.jpg\" alt=\"welcome\">\n");
+      out.write("                <p>\n");
+      out.write("                    Western University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>\n");
+      out.write("\n");
+      out.write("                    We are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.\n");
+      out.write("                </p>\n");
+      out.write("\n");
       out.write("            </div>\n");
-      out.write("        </div>-->\n");
+      out.write("        </section>\n");
+      out.write("        <section class=\"faculty__home\">\n");
+      out.write("            <div>\n");
+      out.write("                <h2>CATOGORIES</h2>\n");
+      out.write("\n");
+      out.write("                <div class=\"faculty__on__home__page\">\n");
+      out.write("                    <div class=\"faculty__on__fac\"><a href=\"images/welcome.jpg\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Management\" width=\"100%\"></a><a href=\"html/management.html\" class=\"faculty__link\"><h3>House</h3></a></div>\n");
+      out.write("                    <div class=\"faculty__on__fac\"><a href=\"html/science.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Science\" width=\"100%\"></a><a href=\"html/science.html\" class=\"faculty__link\"><h3>Building</h3></a></div>\n");
+      out.write("                    <div class=\"faculty__on__fac\"><a href=\"html/technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Technology\" width=\"100%\"></a><a href=\"html/technology.html\" class=\"faculty__link\"><h3>Land</h3></a></div>\n");
+      out.write("                    <div class=\"faculty__on__fac\"><a href=\"html/engineering.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Engineering\" width=\"100%\"></a><a href=\"html/engineering.html\" class=\"faculty__link\"><h3>Apartment</h3></a></div>\n");
+      out.write("                    <div class=\"faculty__on__fac\"><a href=\"html/information-technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Information Technology\" width=\"100%\"></a><a href=\"html/information-technology.html\" class=\"faculty__link\"><h3>Industrial property</h3></a></div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("        <!--        <div class=\"jumbotron jumbotron-fluid\">\n");
+      out.write("                    <div class=\"container__header\">\n");
+      out.write("                        <h1>Welcome to Property Hub</h1>\n");
+      out.write("                        <p>Find your dream property here!</p>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>-->\n");
       out.write("\n");
       out.write("        <!-- Property Listing Section -->\n");
       out.write("        <div class=\"container mt-4\">\n");
@@ -335,7 +335,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 
       out.write("\n");
       out.write("                <div class=\"col-md-4 mb-4\">\n");
-      out.write("                    <div class=\"card\">\n");
+      out.write("                    <div class=\"product\">\n");
       out.write("                        <img src=\"");
       out.print( pro_img_url);
       out.write("\" class=\"card-img-top\" alt=\"Property Image\">\n");
@@ -397,7 +397,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!--/-->\n");
       out.write("\n");
       out.write("        <div class=\"container mt-4\">\n");
-      out.write("            <h2>All Properties</h2>\n");
+      out.write("            <h2>Lands</h2>\n");
       out.write("            <div class=\"row\">\n");
       out.write("                \n");
       out.write("                ");
@@ -423,11 +423,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                             String pro_img_url = rs.getString("pro_img_url");
                             String type = rs.getString("pro_type");
                             // Add other relevant fields as needed
+                            if (type.equals("land")) {
 
                 
       out.write("\n");
       out.write("                <div class=\"col-md-4 mb-4\">\n");
-      out.write("                    <div class=\"card\">\n");
+      out.write("                    <div class=\"product\">\n");
       out.write("                        <img src=\"");
       out.print( pro_img_url);
       out.write("\" class=\"card-img-top\" alt=\"Property Image\">\n");
@@ -450,6 +451,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>\n");
       out.write("                ");
 
+                            }
 
                         } // End of while loop
                     } catch (Exception e) {

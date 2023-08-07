@@ -57,7 +57,7 @@
                   </button>
                 </div>
               </div>
-              <small id="emailHelp" class="form-text text-muted mt-3 centered-text">Don't have an account? <a href="register.jsp" style="color:#146C94;text-decoration: none;"><b> Sign up</b></a></small>
+              <small id="emailHelp" class="form-text text-muted mt-3 centered-text">Don't have an account? <a href="registerForm.jsp" style="color:#146C94;text-decoration: none;"><b> Sign up</b></a></small>
              
             </div>
             <button type="submit" class="btn btn-primary mt-4">Login </button>

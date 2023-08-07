@@ -34,38 +34,38 @@
 
         </section>
         <section>
-			<h2 class="titles">WELCOME TO Property Hub</h2>
-			<div class="welcome">
-				
-					<img src="images/welcome.jpg" alt="welcome">
-					<p>
-						Western University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>
-						
-						We are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.
-					</p>
-				
-			</div>
-		</section>
-		<section class="faculty__home">
-				<div>
-					<h2>CATOGORIES</h2>
-				
-					<div class="faculty__on__home__page">
-					<div class="faculty__on__fac"><a href="images/welcome.jpg"><img src="images/welcome.jpg" alt="Faculty of Management" width="100%"></a><a href="html/management.html" class="faculty__link"><h3>House</h3></a></div>
-					<div class="faculty__on__fac"><a href="html/science.html"><img src="images/welcome.jpg" alt="Faculty of Science" width="100%"></a><a href="html/science.html" class="faculty__link"><h3>Building</h3></a></div>
-					<div class="faculty__on__fac"><a href="html/technology.html"><img src="images/welcome.jpg" alt="Faculty of Technology" width="100%"></a><a href="html/technology.html" class="faculty__link"><h3>Land</h3></a></div>
-					<div class="faculty__on__fac"><a href="html/engineering.html"><img src="images/welcome.jpg" alt="Faculty of Engineering" width="100%"></a><a href="html/engineering.html" class="faculty__link"><h3>Apartment</h3></a></div>
-					<div class="faculty__on__fac"><a href="html/information-technology.html"><img src="images/welcome.jpg" alt="Faculty of Information Technology" width="100%"></a><a href="html/information-technology.html" class="faculty__link"><h3>Industrial property</h3></a></div>
-						
-				</div>
-			</div>
-		</section>
-<!--        <div class="jumbotron jumbotron-fluid">
-            <div class="container__header">
-                <h1>Welcome to Property Hub</h1>
-                <p>Find your dream property here!</p>
+            <h2 class="titles">WELCOME TO Property Hub</h2>
+            <div class="welcome">
+
+                <img src="images/welcome.jpg" alt="welcome">
+                <p>
+                    Western University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>
+
+                    We are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.
+                </p>
+
             </div>
-        </div>-->
+        </section>
+        <section class="faculty__home">
+            <div>
+                <h2>CATOGORIES</h2>
+
+                <div class="faculty__on__home__page">
+                    <div class="faculty__on__fac"><a href="home.jsp"><img src="images/welcome.jpg" alt="Faculty of Management" width="100%"></a><a href="home.jsp" class="faculty__link"><h3>House</h3></a></div>
+                    <div class="faculty__on__fac"><a href="building.jsp"><img src="images/welcome.jpg" alt="Faculty of Science" width="100%"></a><a href="building.jsp" class="faculty__link"><h3>Building</h3></a></div>
+                    <div class="faculty__on__fac"><a href="apartment.jsp"><img src="images/welcome.jpg" alt="Faculty of Technology" width="100%"></a><a href="apartment.jsp" class="faculty__link"><h3>Apartment</h3></a></div>
+                    <div class="faculty__on__fac"><a href="land.jsp"><img src="images/welcome.jpg" alt="Faculty of Engineering" width="100%"></a><a href="land.jsp" class="faculty__link"><h3>Land</h3></a></div>
+                    <div class="faculty__on__fac"><a href="industrial.jsp"><img src="images/welcome.jpg" alt="Faculty of Information Technology" width="100%"></a><a href="industrial.jsp" class="faculty__link"><h3>Industrial property</h3></a></div>
+
+                </div>
+            </div>
+        </section>
+        <!--        <div class="jumbotron jumbotron-fluid">
+                    <div class="container__header">
+                        <h1>Welcome to Property Hub</h1>
+                        <p>Find your dream property here!</p>
+                    </div>
+                </div>-->
 
         <!-- Property Listing Section -->
         <div class="container mt-4">
@@ -240,7 +240,7 @@
         <!--/-->
 
         <div class="container mt-4">
-            <h2>All Properties</h2>
+            <h2>Lands</h2>
             <div class="row">
                 <%@ page import="java.sql.*" %>
                 <%
@@ -265,6 +265,7 @@
                             String pro_img_url = rs.getString("pro_img_url");
                             String type = rs.getString("pro_type");
                             // Add other relevant fields as needed
+                            if (type.equals("land")) {
 
                 %>
                 <div class="col-md-4 mb-4">
@@ -280,6 +281,7 @@
                     </div>
                 </div>
                 <%
+                            }
 
                         } // End of while loop
                     } catch (Exception e) {

@@ -132,7 +132,8 @@ public final class profile_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
     
       out.write("\n");
-      out.write("  \n");
+      out.write("    \n");
+      out.write("\n");
       out.write("\n");
       out.write("    <div class=\"container mt-5\">\n");
       out.write("        <h1 class=\"mb-4\">Edit Buyer Profile</h1>\n");
@@ -173,7 +174,8 @@ public final class profile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("    <!-- Include Bootstrap JS -->\n");
       out.write("    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>\n");
-      out.write("\n");
+      out.write("</body>\n");
+      out.write("</html>\n");
       out.write("\n");
       out.write("    \n");
       out.write("</body>\n");
