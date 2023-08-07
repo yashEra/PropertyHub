@@ -16,6 +16,7 @@
         <!-- Bootstrap CSS link -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/product-card.css">
     </head>
     <body>
         <%@include file="commen_comp/navbar.jsp" %>
@@ -25,13 +26,40 @@
             <div class="header__image-1">
                 <h1>Welcome to Property Hub</h1>
 
-                <h2>Find your dream property here!</h2><br/>
+                <!--<h2>Find your dream property here!</h2><br/>-->
                 <div>
-                    <a href="html/loginForm.jsp" class="singup__singin"><button type="button" class="header__button"><span class="header__button__bg"></span><h3>Join Us!</h3></button></a>
+                    <a href="loginForm.jsp" class="singup__singin"><button type="button" class="header__button"><span class="header__button__bg"></span><h3>Join Us!</h3></button></a>
                     <!--<a href="html/singin.jsp" class="singup__singin"><button type="button" class="header__button"><span class="header__button__bg"></span><h3>Singin</h3></button></a>-->
                 </div>
 
         </section>
+        <section>
+			<h2 class="titles">WELCOME TO Property Hub</h2>
+			<div class="welcome">
+				
+					<img src="images/welcome.jpg" alt="welcome">
+					<p>
+						Western University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>
+						
+						We are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.
+					</p>
+				
+			</div>
+		</section>
+		<section class="faculty__home">
+				<div>
+					<h2>CATOGORIES</h2>
+				
+					<div class="faculty__on__home__page">
+					<div class="faculty__on__fac"><a href="images/welcome.jpg"><img src="images/welcome.jpg" alt="Faculty of Management" width="100%"></a><a href="html/management.html" class="faculty__link"><h3>House</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/science.html"><img src="images/welcome.jpg" alt="Faculty of Science" width="100%"></a><a href="html/science.html" class="faculty__link"><h3>Building</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/technology.html"><img src="images/welcome.jpg" alt="Faculty of Technology" width="100%"></a><a href="html/technology.html" class="faculty__link"><h3>Land</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/engineering.html"><img src="images/welcome.jpg" alt="Faculty of Engineering" width="100%"></a><a href="html/engineering.html" class="faculty__link"><h3>Apartment</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/information-technology.html"><img src="images/welcome.jpg" alt="Faculty of Information Technology" width="100%"></a><a href="html/information-technology.html" class="faculty__link"><h3>Industrial property</h3></a></div>
+						
+				</div>
+			</div>
+		</section>
 <!--        <div class="jumbotron jumbotron-fluid">
             <div class="container__header">
                 <h1>Welcome to Property Hub</h1>
@@ -80,7 +108,7 @@
 
                 %>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="product">
                         <img src="<%= pro_img_url%>" class="card-img-top" alt="Property Image">
                         <div class="card-body">
                             <h5 class="card-title"><%= propertyName%></h5>
@@ -162,7 +190,7 @@
 
                 %>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="product">
                         <img src="<%= pro_img_url%>" class="card-img-top" alt="Property Image">
                         <div class="card-body">
                             <h5 class="card-title"><%= propertyName%></h5>
@@ -240,7 +268,7 @@
 
                 %>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="product">
                         <img src="<%= pro_img_url%>" class="card-img-top" alt="Property Image">
                         <div class="card-body">
                             <h5 class="card-title"><%= propertyName%></h5>

@@ -4,6 +4,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.sql.*;
+import java.sql.*;
+import java.sql.*;
 
 public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -60,51 +62,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>Property Hub</title>\n");
       out.write("        <!-- Bootstrap CSS link -->\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">\n");
-      out.write("        \n");
-      out.write("        <style>\n");
-      out.write("            .jumbotron {\n");
-      out.write("                position: relative;\n");
-      out.write("                height: 100vh;\n");
-      out.write("                overflow: hidden;\n");
-      out.write("            }\n");
-      out.write("\n");
-      out.write("            .jumbotron::before {\n");
-      out.write("                content: \"\";\n");
-      out.write("                position: absolute;\n");
-      out.write("                top: 0;\n");
-      out.write("                left: 0;\n");
-      out.write("                width: 100%;\n");
-      out.write("                height: 100%;\n");
-      out.write("                background: linear-gradient(0deg, rgba(135 206 235 / 54%), rgba(00 21 47 / 69%)),url('./images/main-banner.jpg') rgba(0, 0, 0, 0.4) center/cover no-repeat;\n");
-      out.write("                background-color: rgba(0, 0, 0, 0.4);\n");
-      out.write("            }\n");
-      out.write("\n");
-      out.write("            .jumbotron .container__header {\n");
-      out.write("                position: relative;\n");
-      out.write("                z-index: 1;\n");
-      out.write("                text-align: center;\n");
-      out.write("                color: #fff; /* Set the text color to white */\n");
-      out.write("                align-items: center;\n");
-      out.write("            }\n");
-      out.write("            .container__header{\n");
-      out.write("                \n");
-      out.write("                align-items: center;\n");
-      out.write("                display: block;\n");
-      out.write("                margin-top: 15%;\n");
-      out.write("                font-size: 140%\n");
-      out.write("            }\n");
-      out.write("            .container__header h1{\n");
-      out.write("                \n");
-      out.write("                font-size: 200%;\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                font-weight: 700;\n");
-      out.write("\n");
-      out.write("            }\n");
-      out.write("        </style>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/main.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/product-card.css\">\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("                    ");
+      out.write("        ");
       out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
@@ -187,16 +149,54 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("        <!-- Hero Section -->\n");
-      out.write("        <div class=\"jumbotron jumbotron-fluid\">\n");
+      out.write("        <section>\n");
+      out.write("            <div class=\"header__image-1\">\n");
+      out.write("                <h1>Welcome to Property Hub</h1>\n");
+      out.write("\n");
+      out.write("                <!--<h2>Find your dream property here!</h2><br/>-->\n");
+      out.write("                <div>\n");
+      out.write("                    <a href=\"loginForm.jsp\" class=\"singup__singin\"><button type=\"button\" class=\"header__button\"><span class=\"header__button__bg\"></span><h3>Join Us!</h3></button></a>\n");
+      out.write("                    <!--<a href=\"html/singin.jsp\" class=\"singup__singin\"><button type=\"button\" class=\"header__button\"><span class=\"header__button__bg\"></span><h3>Singin</h3></button></a>-->\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("        </section>\n");
+      out.write("        <section>\n");
+      out.write("\t\t\t<h2 class=\"titles\">WELCOME TO Property Hub</h2>\n");
+      out.write("\t\t\t<div class=\"welcome\">\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t\t<img src=\"images/welcome.jpg\" alt=\"welcome\">\n");
+      out.write("\t\t\t\t\t<p>\n");
+      out.write("\t\t\t\t\t\tWestern University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\tWe are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.\n");
+      out.write("\t\t\t\t\t</p>\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</section>\n");
+      out.write("\t\t<section class=\"faculty__home\">\n");
+      out.write("\t\t\t\t<div>\n");
+      out.write("\t\t\t\t\t<h2>CATOGORIES</h2>\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__home__page\">\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"images/welcome.jpg\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Management\" width=\"100%\"></a><a href=\"html/management.html\" class=\"faculty__link\"><h3>House</h3></a></div>\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/science.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Science\" width=\"100%\"></a><a href=\"html/science.html\" class=\"faculty__link\"><h3>Building</h3></a></div>\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Technology\" width=\"100%\"></a><a href=\"html/technology.html\" class=\"faculty__link\"><h3>Land</h3></a></div>\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/engineering.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Engineering\" width=\"100%\"></a><a href=\"html/engineering.html\" class=\"faculty__link\"><h3>Apartment</h3></a></div>\n");
+      out.write("\t\t\t\t\t<div class=\"faculty__on__fac\"><a href=\"html/information-technology.html\"><img src=\"images/welcome.jpg\" alt=\"Faculty of Information Technology\" width=\"100%\"></a><a href=\"html/information-technology.html\" class=\"faculty__link\"><h3>Industrial property</h3></a></div>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</section>\n");
+      out.write("<!--        <div class=\"jumbotron jumbotron-fluid\">\n");
       out.write("            <div class=\"container__header\">\n");
       out.write("                <h1>Welcome to Property Hub</h1>\n");
       out.write("                <p>Find your dream property here!</p>\n");
       out.write("            </div>\n");
-      out.write("        </div>\n");
+      out.write("        </div>-->\n");
       out.write("\n");
       out.write("        <!-- Property Listing Section -->\n");
       out.write("        <div class=\"container mt-4\">\n");
-      out.write("            <h2>All Properties</h2>\n");
+      out.write("            <h2>Buildings</h2>\n");
       out.write("            <div class=\"row\">\n");
       out.write("                \n");
       out.write("                ");
@@ -231,6 +231,197 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                             String description = rs.getString("description");
                             double price = rs.getDouble("price");
                             String pro_img_url = rs.getString("pro_img_url");
+                            String type = rs.getString("pro_type");
+                            // Add other relevant fields as needed
+                            if (type.equals("building")) {
+
+                
+      out.write("\n");
+      out.write("                <div class=\"col-md-4 mb-4\">\n");
+      out.write("                    <div class=\"product\">\n");
+      out.write("                        <img src=\"");
+      out.print( pro_img_url);
+      out.write("\" class=\"card-img-top\" alt=\"Property Image\">\n");
+      out.write("                        <div class=\"card-body\">\n");
+      out.write("                            <h5 class=\"card-title\">");
+      out.print( propertyName);
+      out.write("</h5>\n");
+      out.write("                            <p class=\"card-text\">Price: ");
+      out.print( price);
+      out.write("</p>\n");
+      out.write("                            <!--<p class=\"card-text\">");
+      out.print( description);
+      out.write("</p>-->\n");
+      out.write("                            <a href=\"item.jsp?pro_id=");
+      out.print( propertyId);
+      out.write("\" class=\"btn btn-primary\">Buy Now</a>\n");
+      out.write("                            <!-- Add other property details here -->\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                ");
+
+                            }
+                        } // End of while loop
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                        // Close resources (ResultSet, PreparedStatement, and Connection)
+                        if (rs != null) {
+                            try {
+                                rs.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        if (pstmt != null) {
+                            try {
+                                pstmt.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        if (conn != null) {
+                            try {
+                                conn.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <!--Houses-->\n");
+      out.write("        <!--/-->\n");
+      out.write("        <!--/-->\n");
+      out.write("        <!--/-->\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <div class=\"container mt-4\">\n");
+      out.write("            <h2>Houses</h2>\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                \n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+
+                    // Database connection settings
+                    try {
+                        // Connect to the database
+                        Class.forName("com.mysql.jdbc.Driver");
+                        conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
+
+                        // Prepare the SQL query to retrieve all property details
+                        String sql = "SELECT * FROM property";
+                        pstmt = conn.prepareStatement(sql);
+
+                        // Execute the query
+                        rs = pstmt.executeQuery();
+
+                        // Iterate over the result set and display property details
+                        while (rs.next()) {
+                            String propertyId = rs.getString("pro_id"); // Get the property ID
+                            String propertyName = rs.getString("pro_name");
+                            String description = rs.getString("description");
+                            double price = rs.getDouble("price");
+                            String pro_img_url = rs.getString("pro_img_url");
+                            String type = rs.getString("pro_type");
+                            // Add other relevant fields as needed
+                            if (type.equals("house")) {
+
+                
+      out.write("\n");
+      out.write("                <div class=\"col-md-4 mb-4\">\n");
+      out.write("                    <div class=\"card\">\n");
+      out.write("                        <img src=\"");
+      out.print( pro_img_url);
+      out.write("\" class=\"card-img-top\" alt=\"Property Image\">\n");
+      out.write("                        <div class=\"card-body\">\n");
+      out.write("                            <h5 class=\"card-title\">");
+      out.print( propertyName);
+      out.write("</h5>\n");
+      out.write("                            <p class=\"card-text\">Price: ");
+      out.print( price);
+      out.write("</p>\n");
+      out.write("                            <!--<p class=\"card-text\">");
+      out.print( description);
+      out.write("</p>-->\n");
+      out.write("                            <a href=\"item.jsp?pro_id=");
+      out.print( propertyId);
+      out.write("\" class=\"btn btn-primary\">Buy Now</a>\n");
+      out.write("                            <!-- Add other property details here -->\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                ");
+
+                            }
+                        } // End of while loop
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                        // Close resources (ResultSet, PreparedStatement, and Connection)
+                        if (rs != null) {
+                            try {
+                                rs.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        if (pstmt != null) {
+                            try {
+                                pstmt.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        if (conn != null) {
+                            try {
+                                conn.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <!--building-->\n");
+      out.write("        <!--/-->\n");
+      out.write("        <!--/-->\n");
+      out.write("        <!--/-->\n");
+      out.write("\n");
+      out.write("        <div class=\"container mt-4\">\n");
+      out.write("            <h2>All Properties</h2>\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                \n");
+      out.write("                ");
+
+                    try {
+                        // Connect to the database
+                        Class.forName("com.mysql.jdbc.Driver");
+                        conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
+
+                        // Prepare the SQL query to retrieve all property details
+                        String sql = "SELECT * FROM property";
+                        pstmt = conn.prepareStatement(sql);
+
+                        // Execute the query
+                        rs = pstmt.executeQuery();
+
+                        // Iterate over the result set and display property details
+                        while (rs.next()) {
+                            String propertyId = rs.getString("pro_id"); // Get the property ID
+                            String propertyName = rs.getString("pro_name");
+                            String description = rs.getString("description");
+                            double price = rs.getDouble("price");
+                            String pro_img_url = rs.getString("pro_img_url");
+                            String type = rs.getString("pro_type");
                             // Add other relevant fields as needed
 
                 
@@ -258,6 +449,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\n");
       out.write("                </div>\n");
       out.write("                ");
+
 
                         } // End of while loop
                     } catch (Exception e) {
@@ -290,7 +482,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
-      out.write("            ");
+      out.write("        ");
       out.write("\n");
       out.write("\n");
       out.write("<html data-bs-theme=\"light\" lang=\"en\">\n");

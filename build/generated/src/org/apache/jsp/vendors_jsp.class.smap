@@ -1,0 +1,28 @@
+SMAP
+vendors_jsp.java
+JSP
+*S JSP
+*F
++ 0 vendors.jsp
+vendors.jsp
++ 1 navbar.jsp
+commen_comp/navbar.jsp
++ 2 footer.jsp
+commen_comp/footer.jsp
+*L
+5,14:51
+5#1,80:65
+18#0,5:144
+23,15:150
+37,4:165
+41:169,5
+42,4:174,3
+46,6:186
+52:192,5
+53,4:197,3
+57,12:209
+69,5:222
+73,4:227
+5#2,68:231
+76#0,9:298
+*E
