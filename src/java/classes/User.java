@@ -25,6 +25,7 @@ public class User {
     private String acc_bank_name;
     private String acc_bank_branch;
     private String userType;
+    private int user_id;
     
     public User(){
         
@@ -141,6 +142,12 @@ public class User {
     public String getUserType() {
         return userType;
     }
+        public void setUserId(int user_id){
+        this.user_id = user_id;
+    }
+    public int getUserId(){
+        return user_id;
+    }
      
     public boolean register(Connection con) throws Exception{
         String query="";
@@ -193,6 +200,7 @@ public class User {
             
             if (hashedPassword.equals(db_password)) {
                 userType = rs.getString("user_type");
+                user_id = rs.getInt("user_id");
                 return true;
             } else {
                 return false;

@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import classes.MD5;
 import classes.DBConnector;
 import classes.User;
 
@@ -46,6 +47,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
 
     String role = request.getParameter("role");
     String firstname = request.getParameter("firstname");
@@ -59,7 +61,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     String acc_bank_name = request.getParameter("acc_bank_name");
     String acc_bank_branch = request.getParameter("acc_bank_branch");
     String username = request.getParameter("username");
-    String password = request.getParameter("password");
+    String password = MD5.getMd5(request.getParameter("password"));
 
     User user = new User();
     user.setRole(role);
@@ -82,7 +84,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     
     if (user.register(DBConnector.getConnection())) {
-        response.sendRedirect("registerForm.jsp?status=1");
+        response.sendRedirect("login.jsp?status=1");
     } else {
         response.sendRedirect("registerForm.jsp?status=0");
     }
