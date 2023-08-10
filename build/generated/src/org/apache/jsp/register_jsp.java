@@ -44,10 +44,10 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     String role = request.getParameter("role");
     String firstname = request.getParameter("firstname");
@@ -84,13 +84,13 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
     
     if (user.register(DBConnector.getConnection())) {
-        response.sendRedirect("login.jsp?status=1");
+        response.sendRedirect("loginForm.jsp?status=1");
     } else {
         response.sendRedirect("registerForm.jsp?status=0");
     }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
 
    /* String role = request.getParameter("role");
     String firstname = request.getParameter("firstname");
@@ -133,6 +133,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
         response.sendRedirect("registerForm.jsp?status=0");
     }*/
     
+      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

@@ -55,7 +55,7 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\n");
       out.write("\n");
       out.write("<body>\n");
-      out.write("    <nav>\n");
+      out.write("<!--    <nav>\n");
       out.write("        <ul>\n");
       out.write("            <li><a href=\"#\" class=\"active\">Home</a></li>\n");
       out.write("            <li><a href=\"#\">Properties</a></li>\n");
@@ -63,7 +63,7 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <li><a href=\"#\">About</a></li>\n");
       out.write("            <li><a href=\"#\">Contact</a></li>\n");
       out.write("        </ul>\n");
-      out.write("    </nav>\n");
+      out.write("    </nav>-->\n");
       out.write("\n");
       out.write("    <div class=\"container\">\n");
       out.write("        <h2>Real Estate Categories</h2>\n");
@@ -72,9 +72,9 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"card h-100\">\n");
       out.write("              <img src=\"./images/shutterstock_1088460305-1000x460.jpg\" alt=\"Residential Properties\" class=\"card-img-top h-50 \">\n");
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
-      out.write("                <h5 class=\"card-title\">Residential Properties</h5>\n");
+      out.write("                <h5 class=\"card-title\">Houses</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">Single-family homes, apartments, condos, etc.</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"home.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");
@@ -83,9 +83,9 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"card h-100\">\n");
       out.write("              <img src=\"./images/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2J1eS12YWNhbnQtbG90LXVwZGF0ZTIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0= (1).webp\" alt=\"Land and Lots\" class=\"card-img-top h-50\">\n");
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
-      out.write("                <h5 class=\"card-title\">Land and Lots</h5>\n");
+      out.write("                <h5 class=\"card-title\">Building</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">Vacant land for development or investmentetc..</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"building.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");
@@ -93,9 +93,9 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"card h-100\">\n");
       out.write("              <img src=\"./images/commercial.jpg\" alt=\"Industrial Properties\" class=\"card-img-top h-50\">\n");
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
-      out.write("                <h5 class=\"card-title\">Industrial Properties</h5>\n");
+      out.write("                <h5 class=\"card-title\">Apartments</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">Manufacturing facilities, distribution centers, etc.</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"apartment.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");
@@ -104,9 +104,9 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"card h-100\">\n");
       out.write("              <img src=\"./images/Capture-d’écran-2019-07-26-à-13.14.52.webp\" alt=\"Luxury Properties\" class=\"card-img-top h-50\">\n");
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
-      out.write("                <h5 class=\"card-title\">Luxury Properties</h5>\n");
+      out.write("                <h5 class=\"card-title\">Lands</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">High-end homes, estates, penthouses, etc.</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"land.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");
@@ -115,9 +115,9 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"card h-100\">\n");
       out.write("              <img src=\"./images/nine-steps-to-turn-your-home-into-a-rental-property_hero.jpg\" alt=\"Rental Properties\" class=\"card-img-top h-50\">\n");
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
-      out.write("                <h5 class=\"card-title\">Rental Properties</h5>\n");
+      out.write("                <h5 class=\"card-title\">Industrial</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">Properties available for lease or rent.</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"industrial.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");
@@ -128,7 +128,7 @@ public final class category_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <div class=\"card-body d-flex flex-column\">\n");
       out.write("                <h5 class=\"card-title\">Commercial Properties</h5>\n");
       out.write("                <p class=\"card-text mb-auto\">Office buildings, retail spaces, warehouses, etc.</p>\n");
-      out.write("                <a href=\"#\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
+      out.write("                <a href=\"commercial.jsp\" class=\"btn btn-primary mt-3\">View Properties</a>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
       out.write("          </div>\n");

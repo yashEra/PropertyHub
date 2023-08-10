@@ -15,15 +15,8 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Agents</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <%@include file="commen_comp/navbar.jsp" %>
+
     <header>
         <h1>Privacy Policy</h1>
     </header>
