@@ -13,8 +13,8 @@
         if (status == 0) {
             message = "<h7 class='text-danger'>Your username and password are incorrect.</h7>";
         }
-        if (status == 1) {
-            message = "<h7 class='text-info'>you have.</h7>";
+        else if (status == 1) {
+            message = "<h7 class='text-success'>you have sucessfully registered.</h7>";
         }
 
     }
@@ -43,19 +43,14 @@
         <form action="login.jsp" method="POST">
             <h4 class="text-center">Login</h4>
             <%= message %>
-            <div class="form-group mb-3 mt-5">
+            <div class="form-group mb-3 mt-4">
               <label for="exampleInputEmail1">Username</label>
               <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="form-group mb-3">
               <label for="exampleInputPassword1">Password</label>
               <div class="input-group">
-                <input type="test" class="form-control" name="password" id="exampleInputPassword1">
-                <div class="input-group-append">
-                  <button class="btn eye-btn" type="button" id="toggleVisibility" >
-                    <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
-                  </button>
-                </div>
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1">
               </div>
               <small id="emailHelp" class="form-text text-muted mt-3 centered-text">Don't have an account? <a href="registerForm.jsp" style="color:#146C94;text-decoration: none;"><b> Sign up</b></a></small>
              
@@ -63,7 +58,7 @@
             <button type="submit" class="btn btn-primary mt-4">Login </button>
           </form>
     </div>
-    <script src="./js/login.js"></script>
+    <!--<script src="./js/login.js"></script>-->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
