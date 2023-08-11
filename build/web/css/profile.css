@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 9, 2023, 1:50:39 AM
+    Author     : Saliha
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+
+
+ .upload-image-btn {
+        margin-top: 10px;
+        background-color: #007bff; /* Blue color used in Bootstrap */
+        border-color: #007bff; /* Blue color used in Bootstrap */
+    }
+
+    .upload-image-btn:hover {
+        background-color: #146C94; /* Darker shade of blue on hover */
+        border-color: #0056b3; /* Darker shade of blue on hover */
+    }
+
+    .upload-image-btn input[type="text"] {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    
+    
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}
+
+
+
+
+   

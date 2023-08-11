@@ -55,9 +55,9 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
 
     User user = new User(username, password);
     if (user.login(DBConnector.getConnection())) {
-        session.setAttribute("user", user);
+        session.setAttribute("userId", user.getUserId());
         if("buyer".equals(user.getUserType())){
-            response.sendRedirect("contact-us.jsp"); //link buyer profile
+            response.sendRedirect("buyerProfile.jsp"); //link buyer profile
         }
         else if("seller".equals(user.getUserType())){
             response.sendRedirect("https://www.w3schools.com/"); //link seller profile
