@@ -13,8 +13,8 @@ import java.sql.*;
  */
 public class DBConnector {
     private static final String URL = "jdbc:mysql://localhost:3306/propertyhub";
-    private static final String DB_USER = "testuser";
-    private static final String DB_PASSWORD = "testuser";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "";
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     
     public static Connection getConnection() throws Exception{

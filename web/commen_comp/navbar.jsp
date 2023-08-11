@@ -3,7 +3,7 @@
     Created on : Aug 7, 2023, 3:31:40 AM
     Author     : USER
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,6 +37,7 @@
         .navbar-nav .nav-link:hover {
             color: #f0f0f0; /* Change to your desired text color on hover */
         }
+
     </style>
 </head>
 <body>
@@ -68,6 +69,19 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <!-- Add more navigation links as needed -->
+                    <!--Search and Filter Form -->
+                    <form class="form-inline ml-auto" action="<c:url value='/search_Filter.jsp'/>" method="POST">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Properties" name="propertyName">
+                        <select class="custom-select mr-sm-2" name="propertyType">
+                            <option value="" style="color:#007bff">All Types</option>
+                            <option value="building" style="color:#007bff">Building</option>
+                            <option value="house" style="color:#007bff">House</option>
+                            <option value="vehicle" style="color:#007bff">Vehicles</option>
+                            <option value="electronic" style="color:#007bff">Electronics</option>
+                        </select>
+
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </ul>
             </div>
         </div>

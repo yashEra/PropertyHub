@@ -3,12 +3,13 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import java.sql.ResultSet;
-import java.sql.PreparedStatement;
-import java.sql.DriverManager;
-import java.sql.Connection;
+import java.sql.*;
+import classes.DBConnector;
+import classes.property;
+import java.util.List;
+import java.util.ArrayList;
 
-public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class search_005fFilter_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -40,7 +41,7 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -51,26 +52,32 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<head>\r\n");
-      out.write("    <title>Properties List</title>\r\n");
-      out.write("    <!-- Include Bootstrap CSS -->\r\n");
-      out.write("    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\">\r\n");
-      out.write("    <link rel=\"stylesheet\" href=\"css/product-card.css\">\r\n");
-      out.write("    <style>\r\n");
-      out.write("    .card-boder {\r\n");
-      out.write("        border: 10px solid skyblue;\r\n");
-      out.write("        padding: 15px;\r\n");
-      out.write("    }\r\n");
-      out.write("</style>\r\n");
-      out.write("</head>\r\n");
-      out.write("<body>\r\n");
-      out.write("    ");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Search and Filter</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/product-card.css\">\n");
+      out.write("        <style>\n");
+      out.write("        .card-boder {\n");
+      out.write("            border: 10px solid skyblue;\n");
+      out.write("            padding: 15px;\n");
+      out.write("        }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
@@ -106,6 +113,7 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        .navbar-nav .nav-link:hover {\r\n");
       out.write("            color: #f0f0f0; /* Change to your desired text color on hover */\r\n");
       out.write("        }\r\n");
+      out.write("\r\n");
       out.write("    </style>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
@@ -137,6 +145,19 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                        <a class=\"nav-link\" href=\"#\">Contact</a>\r\n");
       out.write("                    </li>\r\n");
       out.write("                    <!-- Add more navigation links as needed -->\r\n");
+      out.write("                    <!--Search and Filter Form -->\r\n");
+      out.write("                    <form class=\"form-inline ml-auto\" action=\"../search_Filter.jsp\" method=\"POST\">\r\n");
+      out.write("                        <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search Properties\" name=\"propertyName\">\r\n");
+      out.write("                        <select class=\"custom-select mr-sm-2\" name=\"propertyType\">\r\n");
+      out.write("                            <option value=\"\" style=\"color:#007bff\">All Types</option>\r\n");
+      out.write("                            <option value=\"building\" style=\"color:#007bff\">Building</option>\r\n");
+      out.write("                            <option value=\"house\" style=\"color:#007bff\">House</option>\r\n");
+      out.write("                            <option value=\"vehicle\" style=\"color:#007bff\">Vehicles</option>\r\n");
+      out.write("                            <option value=\"electronic\" style=\"color:#007bff\">Electronics</option>\r\n");
+      out.write("                        </select>\r\n");
+      out.write("\r\n");
+      out.write("                        <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\r\n");
+      out.write("                    </form>\r\n");
       out.write("                </ul>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
@@ -150,67 +171,72 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\"></script>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
-      out.write("\r\n");
-      out.write("    <div class=\"container mt-5\">\r\n");
-      out.write("        <h1>Properties List</h1>\r\n");
+      out.write(" <!-- included navbar -->\n");
+      out.write("        \n");
+      out.write("        <div class=\"container mt-5\">\n");
+      out.write("            <h1 class=\"text-center\">Search Results</h1>\n");
+      out.write("            <div class=\"all-products\">\n");
+      out.write("                ");
+
+                    String propertyName = request.getParameter("propertyName");
+                    String propertyType = request.getParameter("propertyType");
+            
+                    List<property> properties = new ArrayList<property>();
+            
+                    try {
+                        Connection con= DBConnector.getConnection();
+                        String query = "SELECT * FROM property WHERE pro_name LIKE ? AND pro_type LIKE ?";
+                        PreparedStatement pstmt = con.prepareStatement(query);
+                        pstmt.setString(1, "%" + propertyName + "%");
+                        pstmt.setString(2, "%" + propertyType + "%");
+                        ResultSet rs = pstmt.executeQuery();
+
+                        while (rs.next()) {
+                            property property = new property(
+                                rs.getInt("pro_id"),
+                                rs.getString("pro_name"),
+                                rs.getString("pro_type"),
+                                rs.getInt("price"),
+                                rs.getString("pro_img_url"),
+                                rs.getString("description"),
+                                rs.getInt("pro_quantity"),
+                                rs.getInt("seller_id")
+                        );
+                        properties.add(property);
+                    }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    for (int i = 0; i < properties.size(); i++) {
+                        property property = properties.get(i);
+                 
+      out.write("\n");
+      out.write("                 <div class=\"product\">\n");
+      out.write("                    <img src=\"");
+      out.print( property.getProImgUrl());
+      out.write("\" alt=\"Property Image\" class=\"img-fluid\"> \n");
+      out.write("                    <h5 class=\"product-title\">");
+      out.print( property.getProName());
+      out.write("</h5>\n");
+      out.write("                    <p class=\"product-price\"><strong>Type:</strong> ");
+      out.print( property.getProType());
+      out.write("</p>\n");
+      out.write("                    <p class=\"product-price\"><strong>Price:</strong> ");
+      out.print( property.getPrice());
+      out.write("</p>\n");
+      out.write("                    <a href=\"item.jsp?pro_id=");
+      out.print( property.getProId());
+      out.write("\" class=\"btn btn-primary\">View Details</a>\n");
+      out.write("                 </div>\n");
+      out.write("                ");
+
+                    }
+                
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("                \n");
       out.write("        ");
-
-            int sellerId = Integer.parseInt(request.getParameter("sellerId"));
-
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/propertyhub", "testuser", "testuser");
-
-            String query = "SELECT * FROM property WHERE seller_id = ?";
-            PreparedStatement preparedStatement = con.prepareStatement(query);
-            preparedStatement.setInt(1, sellerId);
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            while (resultSet.next()) {
-                int propertyId = resultSet.getInt("pro_id");
-                String propertyName = resultSet.getString("pro_name");
-                String propertyType = resultSet.getString("pro_type");
-                int price = resultSet.getInt("price");
-                String imageUrl = resultSet.getString("pro_img_url");
-        
-      out.write("\r\n");
-      out.write("        <div class=\"card mb-3 custom-card card-boder\">\r\n");
-      out.write("    <div class=\"row g-0\">\r\n");
-      out.write("        <div class=\"col-md-4 d-flex align-items-center\">\r\n");
-      out.write("            <img src=\"");
-      out.print( imageUrl );
-      out.write("\" alt=\"Property Image\" class=\"img-fluid\">\r\n");
-      out.write("        </div>\r\n");
-      out.write("        <div class=\"col-md-8\">\r\n");
-      out.write("            <div class=\"product\">\r\n");
-      out.write("                <h5 class=\"card-title\">");
-      out.print( propertyName );
-      out.write("</h5>\r\n");
-      out.write("                <p class=\"card-text\"><strong>Type:</strong> ");
-      out.print( propertyType );
-      out.write("</p>\r\n");
-      out.write("                <p class=\"card-text\"><strong>Price:</strong> ");
-      out.print( price );
-      out.write("</p>\r\n");
-      out.write("                <a href=\"item.jsp?pro_id=");
-      out.print( propertyId );
-      out.write("\" class=\"btn btn-primary\">Buy Now</a>\r\n");
-      out.write("            </div>\r\n");
-      out.write("        </div>\r\n");
-      out.write("    </div>\r\n");
-      out.write("</div>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("        ");
-
-            }
-            resultSet.close();
-            preparedStatement.close();
-            con.close();
-        
-      out.write("\r\n");
-      out.write("    </div>\r\n");
-      out.write("    ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<html data-bs-theme=\"light\" lang=\"en\">\r\n");
@@ -278,13 +304,10 @@ public final class propertyList_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("</body>\r\n");
       out.write("</html>\r\n");
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("    <!-- Include Bootstrap JS -->\r\n");
-      out.write("    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>\r\n");
-      out.write("</body>\r\n");
-      out.write("</html>\r\n");
+      out.write("\n");
+      out.write("        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
