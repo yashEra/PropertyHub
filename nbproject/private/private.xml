@@ -4,14 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/PropertyHub/src/java/classes/User.java</file>
-            <file>file:/C:/xampp/htdocs/PropertyHub/web/propertyList.jsp</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/images/images/password.jpg</file>
             <file>file:/C:/xampp/htdocs/PropertyHub/web/login.jsp</file>
-            <file>file:/C:/xampp/htdocs/PropertyHub/web/index.jsp</file>
-            <file>file:/C:/xampp/htdocs/PropertyHub/web/commen_comp/navbar.jsp</file>
-            <file>file:/C:/xampp/htdocs/PropertyHub/web/search_Filter.jsp</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/buyer_password_reset.jsp</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/registerForm.jsp</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/buyerProfile.jsp</file>
             <file>file:/C:/xampp/htdocs/PropertyHub/web/loginForm.jsp</file>
-            <file>file:/C:/xampp/htdocs/PropertyHub/src/java/classes/property.java</file>
             <file>file:/C:/xampp/htdocs/PropertyHub/src/java/classes/DBConnector.java</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/register.jsp</file>
+            <file>file:/C:/xampp/htdocs/PropertyHub/web/edit_buyerProfile.jsp</file>
         </group>
     </open-files>
 </project-private>
