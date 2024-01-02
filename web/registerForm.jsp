@@ -10,7 +10,7 @@
     if (request.getParameter("status") != null) {
         int status = Integer.parseInt(request.getParameter("status"));
         if (status == 1) {
-            message = "<h6 class='text-success'>You have successfully registered with Samadhi Bookstore.</h6>";
+            message = "<h6 class='text-success'>You have successfully registered.</h6>";
         } else {
             message = "<h6 class='text-danger'>Oops! There was an error during sign-up. Please try again.</h6>";
         }
@@ -131,9 +131,6 @@
                         <label for="exampleInputEmail1">Password</label>
                         <input type="text" class="form-control" name="password" id="exampleInputEmail1"
                             aria-describedby="emailHelp">
-                        <div id="passwordHelpBlock" class="form-text">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces.
-                        </div>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
